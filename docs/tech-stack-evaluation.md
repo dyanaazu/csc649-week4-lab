@@ -1,19 +1,19 @@
 # Tech Stack Evaluation
 
 ## Project
-[Name of your Assignment 1 or FYP project, in one line]
+A Web-Based Preliminary Insomnia Screening and Sleep Diaries System.
 
 ## Requirements that drive the decision
 List 3 to 5 requirements from your own docs/requirements.md. Include at
 least 2 non-functional requirements.
-- [FR or NFR number]: [requirement]
-- [FR or NFR number]: [requirement]
-- [FR or NFR number]: [requirement]
+- User signup/login.
+- User answer a questionaire and get a scale result.
+- User can track their sleep progress.
 
 ## Options
-- Option A: [for example: static website (HTML and JavaScript) on GitHub Pages]
-- Option B: [for example: Python web app (Flask) with a database on a cloud host]
-- Option C: [your own idea]
+- Option A: Dart web app (Flutter) with a SQLite database on a cloud host and user login.
+- Option B: Static website (HTML and Javascript) on NetBeans. Task are stored in the user's own browser.
+- Option C: A low-code app builder with a ready-made database.
 
 ## Decision matrix
 Weight: how important the criterion is for YOUR project (1 = low, 5 = high).
@@ -22,17 +22,19 @@ Weighted score = weight x score. Add them up for each option.
 
 | Criterion                          | Weight | A score | B score | C score |
 |------------------------------------|--------|---------|---------|---------|
-| Fits my requirements               |        |         |         |         |
-| Skills I already have              |        |         |         |         |
-| Time to build before my deadline   |        |         |         |         |
-| Free hosting and tools             |        |         |         |         |
-| Performance and security needs     |        |         |         |         |
-| Room to grow later                 |        |         |         |         |
-| **Total (weighted)**               |        |         |         |         |
+| Fits my requirements               | 5      | 4       | 3       | 3       |
+| Skills I already have              | 3      | 3       | 4       | 3       |
+| Time to build before my deadline   | 3      | 3       | 3       | 4       |
+| Free hosting and tools             | 3      | 4       | 4       | 4       |
+| Performance and security needs     | 4      | 4       | 4       | 3       |
+| Room to grow later                 | 4      | 4       | 4       | 3       |
+| **Total (weighted)**               |        |**80**   |**80**   |**72**   |
 
 ## Decision record
-- **Context:** [what problem, and what limits (time, skills, cost)]
-- **Decision:** [the option you chose]
-- **Reasons:** [2 to 3 reasons, linked to your requirements and the matrix]
-- **Consequences:** [what becomes easy, what becomes hard]
-- **Risks and next review:** [what could go wrong, and when you will check again]
+- **Context:** A sleep diaries/coach app. I know HTML and basic Python but I want to try build a app.
+- **Decision:** Option A, web app.
+- **Reasons:** App more convinient for user to use.
+- **Consequences:** Easy:the system compiles code directly into native machine code for iOS, Android, Windows and Mac  
+                    Harder:never build a app.
+- **Risks and next review:** If I change my SQL database structure after the app is already installed on a device, the 
+                             app will crash. Before releasing an app update, install the old version app, put some data in it, then install the new version over it without deleting it.
